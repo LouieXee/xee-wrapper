@@ -1,11 +1,12 @@
 {
   "name": "xee-wrapper",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
   "scripts": {
     "serve": "gulp serve",
     "build": "gulp build",
+    "pack": "gulp pack",
     "test": "gulp test"
   },
   "author": "hzxiezhongzheng",
@@ -36,5 +37,9 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
     "webpack-dev-middleware": "^1.10.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "xee-utils": "0.0.4"
   }
 }
