@@ -1,6 +1,6 @@
 {
   "name": "xee-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "build/index.js",
   "scripts": {
@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "xee-utils": "0.0.4"
+    "xee-utils": "*"
   }
 }
