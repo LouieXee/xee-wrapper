@@ -14,7 +14,7 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -22,11 +22,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Base = _xeeUtils2.default.Base,
-    Events = _xeeUtils2.default.Events;
+var Base = _xeeUtils2["default"].Base,
+    Events = _xeeUtils2["default"].Events;
 
 
-var $ = _jquery2.default;
+var $ = _jquery2["default"];
 
 var DEFAULT_SHOW_CLASSNAME = 'show';
 var DEFAULT_HIDE_CLASSNAME = 'hide';
@@ -52,7 +52,7 @@ var Wrapper = function (_Base) {
 
         _classCallCheck(this, Wrapper);
 
-        if (!_jquery2.default) {
+        if (!_jquery2["default"]) {
             var _ret;
 
             console.log('xee-wrapper 依赖于 jquery.js, 请提前载入该模块!');
@@ -81,7 +81,7 @@ var Wrapper = function (_Base) {
 
             this.__events__ = new Events();
 
-            if (!!_xeeUtils2.default.TRANSITION_NAME && !!_xeeUtils2.default.ANIMATION_NAME) {
+            if (!!_xeeUtils2["default"].TRANSITION_NAME && !!_xeeUtils2["default"].ANIMATION_NAME) {
                 var _applyCallbacks = function _applyCallbacks(e) {
                     var temp = _this.__callbacksArr__[0];
 
@@ -92,7 +92,7 @@ var Wrapper = function (_Base) {
                 };
 
                 var _getListener = function _getListener(target, type) {
-                    if (_xeeUtils2.default.isFunction(target)) {
+                    if (_xeeUtils2["default"].isFunction(target)) {
                         // 如果传入方法，则校验该方法，校验通过则调用回单函数
                         return function (callback) {
                             _this.__callbacksArr__.push({
@@ -100,7 +100,7 @@ var Wrapper = function (_Base) {
                                 callback: callback
                             });
                         };
-                    } else if (_xeeUtils2.default.isBoolean(target) && target) {
+                    } else if (_xeeUtils2["default"].isBoolean(target) && target) {
                         // 如果传入布尔值为真，则校验默认方法，校验通过则调用回单函数
                         var className = type == TYPE_SHOW ? _this.__showClassName__ : _this.__hideClassName__;
 
@@ -145,8 +145,8 @@ var Wrapper = function (_Base) {
 
             this.__callbacksArr__ = [];
 
-            var before = _xeeUtils2.default.isFunction(opt.before) ? opt.before.bind(this) : _beforeCallback;
-            var after = _xeeUtils2.default.isFunction(opt.after) ? opt.after.bind(this) : _xeeUtils2.default.noop;
+            var before = _xeeUtils2["default"].isFunction(opt.before) ? opt.before.bind(this) : _beforeCallback;
+            var after = _xeeUtils2["default"].isFunction(opt.after) ? opt.after.bind(this) : _xeeUtils2["default"].noop;
 
             before(function () {
                 _this3.ele.removeClass(_this3.__hideClassName__).addClass(_this3.__showClassName__);
@@ -163,8 +163,8 @@ var Wrapper = function (_Base) {
 
             this.__callbacksArr__ = [];
 
-            var before = _xeeUtils2.default.isFunction(opt.before) ? opt.before.bind(this) : _beforeCallback;
-            var after = _xeeUtils2.default.isFunction(opt.after) ? opt.after.bind(this) : _xeeUtils2.default.noop;
+            var before = _xeeUtils2["default"].isFunction(opt.before) ? opt.before.bind(this) : _beforeCallback;
+            var after = _xeeUtils2["default"].isFunction(opt.after) ? opt.after.bind(this) : _xeeUtils2["default"].noop;
 
             before(function () {
                 _this4.ele.removeClass(_this4.__showClassName__).addClass(_this4.__hideClassName__);
@@ -177,7 +177,7 @@ var Wrapper = function (_Base) {
     return Wrapper;
 }(Base);
 
-exports.default = Wrapper;
+exports["default"] = Wrapper;
 
 
 function _beforeCallback(done) {
