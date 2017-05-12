@@ -1,9 +1,12 @@
 {
   "name": "xee-wrapper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "xeeType": "component",
   "main": "build/index.js",
   "author": "hzxiezhongzheng",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "xee-utils": "0.0.9"
+  }
 }
