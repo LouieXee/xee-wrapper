@@ -2,7 +2,9 @@
   "name": "xee-wrapper",
   "version": "0.0.7",
   "description": "",
-  "xeeType": "component",
+  "xeeConfig": {
+    "type": "component"
+  },
   "main": "build/index.js",
   "author": "hzxiezhongzheng",
   "license": "ISC",
