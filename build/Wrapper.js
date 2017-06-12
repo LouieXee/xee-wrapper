@@ -52,13 +52,6 @@ var Wrapper = function (_Base) {
 
         _classCallCheck(this, Wrapper);
 
-        if (!_jquery2["default"]) {
-            var _ret;
-
-            console.log('xee-wrapper 依赖于 jquery.js, 请提前载入该模块!');
-            return _ret = false, _possibleConstructorReturn(_this2, _ret);
-        }
-
         var _this2 = _possibleConstructorReturn(this, (Wrapper.__proto__ || Object.getPrototypeOf(Wrapper)).call(this));
 
         _this2.ele = $(ele);

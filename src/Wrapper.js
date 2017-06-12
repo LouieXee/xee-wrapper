@@ -23,11 +23,6 @@ const TYPE_HIDE = 2;
 export default class Wrapper extends Base {
 
     constructor (ele, opt = {}) {
-        if (!jQuery) {
-            console.log('xee-wrapper 依赖于 jquery.js, 请提前载入该模块!');
-            return false;
-        }
-
         super();
 
         this.ele = $(ele);

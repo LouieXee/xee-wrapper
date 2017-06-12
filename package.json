@@ -1,6 +1,6 @@
 {
   "name": "xee-wrapper",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "xeeConfig": {
     "type": "component"
